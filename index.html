@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Spa & Massage Center - Premium Wellness & Relaxation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="lotus-loader">
+                <svg viewBox="0 0 100 100" class="lotus-svg">
+                    <path class="petal p1" d="M50 50 Q30 20 50 5 Q70 20 50 50" fill="none" stroke="#c9a962" stroke-width="1.5"/>
+                    <path class="petal p2" d="M50 50 Q20 35 5 40 Q25 50 50 50" fill="none" stroke="#c9a962" stroke-width="1.5"/>
+                    <path class="petal p3" d="M50 50 Q80 35 95 40 Q75 50 50 50" fill="none" stroke="#c9a962" stroke-width="1.5"/>
+                    <path class="petal p4" d="M50 50 Q30 70 35 95 Q45 70 50 50" fill="none" stroke="#c9a962" stroke-width="1.5"/>
+                    <path class="petal p5" d="M50 50 Q70 70 65 95 Q55 70 50 50" fill="none" stroke="#c9a962" stroke-width="1.5"/>
+                    <circle cx="50" cy="50" r="5" fill="#c9a962"/>
+                </svg>
+            </div>
+            <p class="preloader-text">Elite Spa</p>
+        </div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <img src="images/logo.png" alt="Elite Spa Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#booking" class="btn-book-nav">Book Now</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: url('images/hero.jpg');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+            <div class="hero-slide" style="background: linear-gradient(135deg, #2d1b3d 0%, #1a1a2e 50%, #0d2137 100%);"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <i class="fas fa-spa"></i>
+                <span>Premium Wellness Experience</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="line reveal-up" style="transition-delay: 0.2s;">Elite Spa &</span>
+                <span class="line reveal-up gold-text" style="transition-delay: 0.4s;">Massage Center</span>
+            </h1>
+            <p class="hero-subtitle reveal-up" style="transition-delay: 0.6s;">
+                Where tranquility meets luxury. Experience the art of relaxation with our signature therapies, crafted to restore your body, mind, and soul.
+            </p>
+            <div class="hero-buttons reveal-up" style="transition-delay: 0.8s;">
+                <a href="#services" class="btn btn-primary">
+                    <span>Explore Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#booking" class="btn btn-outline">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up" style="transition-delay: 1s;">
+                <div class="stat">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Expert Therapists</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="10000">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+        <div class="hero-socials">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-main">
+                        <img src="images/hero.jpg" alt="About Elite Spa">
+                    </div>
+                    <div class="about-img-badge">
+                        <div class="badge-content">
+                            <span class="badge-number">15+</span>
+                            <span class="badge-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="floating-leaf leaf-1"><i class="fas fa-leaf"></i></div>
+                    <div class="floating-leaf leaf-2"><i class="fas fa-spa"></i></div>
+                </div>
+                <div class="about-content reveal-right">
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        <span class="tag-text">About Us</span>
+                        <span class="tag-line"></span>
+                    </div>
+                    <h2 class="section-title">Welcome to <span class="gold-text">Elite Spa</span></h2>
+                    <p class="about-desc">
+                        At Elite Spa & Massage Center, we believe that true wellness is a journey, not a destination. Our sanctuary is designed to transport you from the stresses of everyday life into a world of profound relaxation and rejuvenation.
+                    </p>
+                    <p class="about-desc">
+                        With over 15 years of excellence, our certified therapists combine ancient healing traditions with modern techniques to deliver an unparalleled spa experience. Every treatment is personalized to meet your unique needs.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <h4>Certified Therapists</h4>
+                                <p>Internationally trained professionals</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <h4>Organic Products</h4>
+                                <p>100% natural & organic oils</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <h4>Personalized Care</h4>
+                                <p>Customized for your needs</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Hygiene First</h4>
+                                <p>Premium sterilized environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services/Massage Types Section -->
+    <section class="services" id="services">
+        <div class="services-bg"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Our Services</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-title center">Massage <span class="gold-text">Therapies</span></h2>
+                <p class="section-subtitle">Discover our comprehensive range of massage therapies, each designed to address specific needs and deliver ultimate relaxation.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Swedish Massage -->
+                <div class="service-card reveal-up" data-delay="0">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/swedish.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                                <h3>Swedish Massage</h3>
+                                <p>The classic relaxation therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Swedish Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Swedish massage is the most common and best-known type of massage. It uses long, smooth strokes, kneading, and circular movements on superficial layers of muscle using massage lotion or oil.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Relieves muscle tension</li>
+                                <li><i class="fas fa-check"></i> Improves blood circulation</li>
+                                <li><i class="fas fa-check"></i> Reduces stress & anxiety</li>
+                                <li><i class="fas fa-check"></i> Enhances flexibility</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 3,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Tissue Massage -->
+                <div class="service-card reveal-up" data-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/deep-tissue.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-fist-raised"></i></div>
+                                <h3>Deep Tissue</h3>
+                                <p>Targeted muscle relief therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Deep Tissue Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Deep tissue massage targets deeper layers of muscle and connective tissue. It uses slower, more forceful strokes to release chronic muscle tension and knots.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Treats chronic pain</li>
+                                <li><i class="fas fa-check"></i> Breaks scar tissue</li>
+                                <li><i class="fas fa-check"></i> Reduces inflammation</li>
+                                <li><i class="fas fa-check"></i> Improves posture</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,500</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hot Stone Massage -->
+                <div class="service-card reveal-up" data-delay="200">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/hot-stone.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-fire"></i></div>
+                                <h3>Hot Stone</h3>
+                                <p>Healing warmth therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Hot Stone Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Hot stone massage uses smooth, heated basalt stones placed on key points of the body. The heat penetrates deep into muscles, providing profound relaxation and pain relief.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Deep muscle relaxation</li>
+                                <li><i class="fas fa-check"></i> Eases stiff joints</li>
+                                <li><i class="fas fa-check"></i> Promotes better sleep</li>
+                                <li><i class="fas fa-check"></i> Reduces stress hormones</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 5,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aromatherapy -->
+                <div class="service-card reveal-up" data-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front gradient-card-1">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-spa"></i></div>
+                                <h3>Aromatherapy</h3>
+                                <p>Essential oil healing therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Aromatherapy Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Aromatherapy combines massage techniques with essential oils extracted from plants. Each oil has unique healing properties that affect the body and mind through scent and absorption.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Boosts mood & energy</li>
+                                <li><i class="fas fa-check"></i> Relieves headaches</li>
+                                <li><i class="fas fa-check"></i> Strengthens immunity</li>
+                                <li><i class="fas fa-check"></i> Balances emotions</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thai Massage -->
+                <div class="service-card reveal-up" data-delay="0">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/thai.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-pray"></i></div>
+                                <h3>Thai Massage</h3>
+                                <p>Ancient assisted yoga therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Thai Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Traditional Thai massage is an ancient healing system that combines acupressure, Indian Ayurvedic principles, and assisted yoga postures. Performed on a floor mat without oils.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Increases energy flow</li>
+                                <li><i class="fas fa-check"></i> Improves flexibility</li>
+                                <li><i class="fas fa-check"></i> Releases blocked energy</li>
+                                <li><i class="fas fa-check"></i> Stimulates circulation</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,500</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Massage -->
+                <div class="service-card reveal-up" data-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/sports.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-running"></i></div>
+                                <h3>Sports Massage</h3>
+                                <p>Athletic performance recovery</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Sports Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Sports massage is designed for athletes and active individuals. It focuses on areas of the body that are overused and stressed from repetitive movements, aiding recovery and performance.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Prevents injuries</li>
+                                <li><i class="fas fa-check"></i> Enhances performance</li>
+                                <li><i class="fas fa-check"></i> Reduces recovery time</li>
+                                <li><i class="fas fa-check"></i> Treats sports injuries</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 5,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflexology -->
+                <div class="service-card reveal-up" data-delay="200">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/reflexology.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-hand-paper"></i></div>
+                                <h3>Reflexology</h3>
+                                <p>Foot pressure point therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Reflexology</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Reflexology applies pressure to specific points on the feet, hands, and ears that correspond to different organs and systems of the body, promoting natural healing and balance.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Balances body energy</li>
+                                <li><i class="fas fa-check"></i> Improves nerve function</li>
+                                <li><i class="fas fa-check"></i> Boosts circulation</li>
+                                <li><i class="fas fa-check"></i> Relieves migraines</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 3,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shiatsu -->
+                <div class="service-card reveal-up" data-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front" style="background-image: url('images/shiatsu.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-yin-yang"></i></div>
+                                <h3>Shiatsu</h3>
+                                <p>Japanese finger pressure therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Shiatsu Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Shiatsu is a Japanese therapy meaning "finger pressure." It uses localized pressure with fingers, thumbs, and palms along energy pathways (meridians) to restore energy flow.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Restores energy balance</li>
+                                <li><i class="fas fa-check"></i> Reduces anxiety</li>
+                                <li><i class="fas fa-check"></i> Relieves digestive issues</li>
+                                <li><i class="fas fa-check"></i> Strengthens body-mind</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Couples Massage -->
+                <div class="service-card reveal-up" data-delay="0">
+                    <div class="card-inner">
+                        <div class="card-front gradient-card-2">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-heart"></i></div>
+                                <h3>Couples Massage</h3>
+                                <p>Romantic shared experience</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Couples Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Share a memorable spa experience with your partner in our private couples suite. Two therapists work simultaneously in a romantic setting with candles, rose petals, and champagne.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Romantic bonding experience</li>
+                                <li><i class="fas fa-check"></i> Private luxury suite</li>
+                                <li><i class="fas fa-check"></i> Complimentary champagne</li>
+                                <li><i class="fas fa-check"></i> Personalized treatments</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 8,000</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregnancy Massage -->
+                <div class="service-card reveal-up" data-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front gradient-card-3">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-baby"></i></div>
+                                <h3>Prenatal Massage</h3>
+                                <p>Gentle pregnancy therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Prenatal Massage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Prenatal massage is specifically designed for expecting mothers. Using special pillows and positioning, it relieves pregnancy discomforts like back pain, swelling, and joint stress.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Reduces back pain</li>
+                                <li><i class="fas fa-check"></i> Eases swelling</li>
+                                <li><i class="fas fa-check"></i> Improves labor outcomes</li>
+                                <li><i class="fas fa-check"></i> Reduces anxiety</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,500</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lymphatic Drainage -->
+                <div class="service-card reveal-up" data-delay="200">
+                    <div class="card-inner">
+                        <div class="card-front gradient-card-4">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-tint"></i></div>
+                                <h3>Lymphatic Drainage</h3>
+                                <p>Detoxifying gentle therapy</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Lymphatic Drainage</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Lymphatic drainage massage uses very light pressure and long, rhythmic strokes to stimulate the lymphatic system, helping remove waste and toxins from body tissues.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Detoxifies the body</li>
+                                <li><i class="fas fa-check"></i> Reduces water retention</li>
+                                <li><i class="fas fa-check"></i> Boosts immune system</li>
+                                <li><i class="fas fa-check"></i> Post-surgery recovery</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 4,500</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cupping Therapy -->
+                <div class="service-card reveal-up" data-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front gradient-card-5">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <div class="card-icon"><i class="fas fa-circle-notch"></i></div>
+                                <h3>Cupping Therapy</h3>
+                                <p>Traditional suction healing</p>
+                                <span class="card-cta">Learn More <i class="fas fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Cupping Therapy</h3>
+                            <div class="card-divider"></div>
+                            <p class="card-desc">Cupping therapy uses special cups placed on the skin to create suction. This ancient Chinese therapy increases blood circulation, relieves muscle tension, and promotes cell repair.</p>
+                            <ul class="benefit-list">
+                                <li><i class="fas fa-check"></i> Relieves muscle tension</li>
+                                <li><i class="fas fa-check"></i> Improves blood flow</li>
+                                <li><i class="fas fa-check"></i> Reduces cellulite</li>
+                                <li><i class="fas fa-check"></i> Eases respiratory issues</li>
+                            </ul>
+                            <div class="card-price">From <span>Rs. 3,500</span></div>
+                            <a href="#booking" class="card-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Massage Types Banner -->
+    <section class="extra-services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">More Therapies</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-title center">Additional <span class="gold-text">Treatments</span></h2>
+            </div>
+            <div class="extra-grid">
+                <div class="extra-item reveal-up" data-delay="0">
+                    <div class="extra-icon"><i class="fas fa-water"></i></div>
+                    <h4>Balinese Massage</h4>
+                    <p>Traditional Indonesian therapy combining acupressure, skin rolling, and aromatherapy with essential oils for deep relaxation.</p>
+                    <span class="extra-price">Rs. 4,500</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="100">
+                    <div class="extra-icon"><i class="fas fa-gem"></i></div>
+                    <h4>Hot Oil Massage</h4>
+                    <p>Warm herbal oils massaged into the body using traditional techniques to nourish skin, relax muscles, and calm the nervous system.</p>
+                    <span class="extra-price">Rs. 3,500</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="200">
+                    <div class="extra-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>Ayurvedic Massage</h4>
+                    <p>Ancient Indian healing system using dosha-specific herbal oils and techniques to balance body, mind, and spirit.</p>
+                    <span class="extra-price">Rs. 5,000</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="300">
+                    <div class="extra-icon"><i class="fas fa-snowflake"></i></div>
+                    <h4>Cold Stone Therapy</h4>
+                    <p>Cool marble stones reduce inflammation, constrict blood vessels, and refresh the skin — perfect after hot stone or for migraines.</p>
+                    <span class="extra-price">Rs. 4,000</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="0">
+                    <div class="extra-icon"><i class="fas fa-moon"></i></div>
+                    <h4>Lomi Lomi</h4>
+                    <p>Hawaiian massage using long, flowing strokes with forearms mimicking ocean waves, combined with prayer and breath.</p>
+                    <span class="extra-price">Rs. 5,500</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="100">
+                    <div class="extra-icon"><i class="fas fa-crown"></i></div>
+                    <h4>Signature Elite Massage</h4>
+                    <p>Our exclusive blend of multiple techniques customized for you — the ultimate Elite Spa premium experience.</p>
+                    <span class="extra-price">Rs. 7,000</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="200">
+                    <div class="extra-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Head & Scalp Massage</h4>
+                    <p>Focused Indian head massage relieving tension headaches, promoting hair health, and inducing deep mental relaxation.</p>
+                    <span class="extra-price">Rs. 2,000</span>
+                </div>
+                <div class="extra-item reveal-up" data-delay="300">
+                    <div class="extra-icon"><i class="fas fa-feather-alt"></i></div>
+                    <h4>Trigger Point Therapy</h4>
+                    <p>Concentrated finger pressure on specific "trigger points" to release knots and referred pain patterns throughout the body.</p>
+                    <span class="extra-price">Rs. 4,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Packages</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-title center">Spa <span class="gold-text">Packages</span></h2>
+                <p class="section-subtitle">Choose the perfect package for your wellness journey</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-up" data-delay="0">
+                    <div class="pricing-badge">Starter</div>
+                    <div class="pricing-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Relaxation</h3>
+                    <div class="price-value">Rs. <span>5,000</span></div>
+                    <p class="price-duration">60 Minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Swedish or Aromatherapy</li>
+                        <li><i class="fas fa-check"></i> Hot Towel Treatment</li>
+                        <li><i class="fas fa-check"></i> Herbal Tea</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Hot Stones</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Facial Included</li>
+                    </ul>
+                    <a href="#booking" class="pricing-btn">Book Package</a>
+                </div>
+                <div class="pricing-card featured reveal-up" data-delay="200">
+                    <div class="pricing-badge popular">Most Popular</div>
+                    <div class="pricing-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Royal Elite</h3>
+                    <div class="price-value">Rs. <span>12,000</span></div>
+                    <p class="price-duration">120 Minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Signature Elite Massage</li>
+                        <li><i class="fas fa-check"></i> Hot Stone Therapy</li>
+                        <li><i class="fas fa-check"></i> Aromatherapy Facial</li>
+                        <li><i class="fas fa-check"></i> Scalp & Foot Massage</li>
+                        <li><i class="fas fa-check"></i> Refreshments</li>
+                    </ul>
+                    <a href="#booking" class="pricing-btn">Book Package</a>
+                </div>
+                <div class="pricing-card reveal-up" data-delay="400">
+                    <div class="pricing-badge">Luxury</div>
+                    <div class="pricing-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Couples Retreat</h3>
+                    <div class="price-value">Rs. <span>20,000</span></div>
+                    <p class="price-duration">150 Minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Private Suite for Two</li>
+                        <li><i class="fas fa-check"></i> Choice of Massage</li>
+                        <li><i class="fas fa-check"></i> Champagne & Chocolates</li>
+                        <li><i class="fas fa-check"></i> Rose Petal Bath</li>
+                        <li><i class="fas fa-check"></i> Couple Facials</li>
+                    </ul>
+                    <a href="#booking" class="pricing-btn">Book Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Testimonials</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-title center">Client <span class="gold-text">Reviews</span></h2>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"Absolutely the best spa experience I've ever had. The Royal Elite package was pure bliss from start to finish. The therapists are incredibly skilled and the ambiance is magical."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Ayesha Khan</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"My partner and I booked the Couples Retreat for our anniversary and it was unforgettable. The private suite, champagne, and expert massages made it the most romantic experience."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Hassan & Sara</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"As an athlete, the deep tissue and sports massage here have been game-changing for my recovery. The therapists understand muscle anatomy deeply. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Bilal Ahmed</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"The prenatal massage helped me so much during my third trimester. The therapist was gentle, knowledgeable, and made me feel completely at ease. A sanctuary for expecting mothers."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Fatima Malik</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="booking-bg"></div>
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info reveal-left">
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        <span class="tag-text">Reservation</span>
+                    </div>
+                    <h2 class="section-title">Book Your <span class="gold-text">Escape</span></h2>
+                    <p>Reserve your moment of tranquility. Fill in the form and our team will confirm your appointment shortly.</p>
+                    <div class="booking-features">
+                        <div class="bk-feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Flexible Hours</h4>
+                                <p>Open 7 days a week, 10 AM - 11 PM</p>
+                            </div>
+                        </div>
+                        <div class="bk-feature">
+                            <i class="fas fa-gift"></i>
+                            <div>
+                                <h4>Gift Cards</h4>
+                                <p>Perfect gift for your loved ones</p>
+                            </div>
+                        </div>
+                        <div class="bk-feature">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Free Parking</h4>
+                                <p>Complimentary valet parking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form reveal-right">
+                    <form id="bookingForm">
+                        <h3>Make an Appointment</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Your phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label>Select Service</label>
+                                <select required>
+                                    <option value="">Choose massage</option>
+                                    <option>Swedish Massage</option>
+                                    <option>Deep Tissue</option>
+                                    <option>Hot Stone</option>
+                                    <option>Aromatherapy</option>
+                                    <option>Thai Massage</option>
+                                    <option>Sports Massage</option>
+                                    <option>Reflexology</option>
+                                    <option>Shiatsu</option>
+                                    <option>Couples Massage</option>
+                                    <option>Prenatal Massage</option>
+                                    <option>Lymphatic Drainage</option>
+                                    <option>Cupping Therapy</option>
+                                    <option>Signature Elite</option>
+                                    <option>Relaxation Package</option>
+                                    <option>Royal Elite Package</option>
+                                    <option>Couples Retreat Package</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Time</label>
+                                <select required>
+                                    <option value="">Select time</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>12:00 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>2:00 PM</option>
+                                    <option>3:00 PM</option>
+                                    <option>4:00 PM</option>
+                                    <option>5:00 PM</option>
+                                    <option>6:00 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>8:00 PM</option>
+                                    <option>9:00 PM</option>
+                                    <option>10:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea rows="3" placeholder="Any special requirements or notes..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Book Appointment</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-tag center">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Get In Touch</span>
+                    <span class="tag-line"></span>
+                </div>
+                <h2 class="section-title center">Contact <span class="gold-text">Us</span></h2>
+                <p class="section-subtitle">Address aur contact details baad mein add kiye jayenge</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card reveal-up" data-delay="0">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Visit Us</h3>
+                    <p>[Address will be added]</p>
+                </div>
+                <div class="contact-card reveal-up" data-delay="100">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Call Us</h3>
+                    <p>[Phone number will be added]</p>
+                </div>
+                <div class="contact-card reveal-up" data-delay="200">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>[Email will be added]</p>
+                </div>
+                <div class="contact-card reveal-up" data-delay="300">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Open Hours</h3>
+                    <p>Mon - Sun: 10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="Elite Spa Logo">
+                        </div>
+                        <p>Where tranquility meets luxury. Experience the art of relaxation with our signature therapies crafted to restore your body, mind, and soul.</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#pricing">Packages</a></li>
+                            <li><a href="#booking">Book Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="#services">Swedish Massage</a></li>
+                            <li><a href="#services">Deep Tissue</a></li>
+                            <li><a href="#services">Hot Stone</a></li>
+                            <li><a href="#services">Aromatherapy</a></li>
+                            <li><a href="#services">Thai Massage</a></li>
+                            <li><a href="#services">Couples Massage</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers and wellness tips.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Elite Spa & Massage Center. All rights reserved. Designed with <i class="fas fa-heart" style="color:#c9a962;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
